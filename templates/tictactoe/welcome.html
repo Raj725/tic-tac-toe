@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %} Welcome {% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <div class="container">
+        <h1>Hello {{ user.username | capfirst }}!</h1>
+        <p>Lets play Tic-Tac-Toe</p>
+    </div>
+</div>
+{% endblock %}
