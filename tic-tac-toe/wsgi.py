@@ -1,5 +1,5 @@
 """
-WSGI config for tictactoe project.
+WSGI config for tic-tac-toe project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tictactoe.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tic-tac-toe.settings')
 
 application = get_wsgi_application()

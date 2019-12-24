@@ -1,4 +1,4 @@
-"""tictactoe URL Configuration
+"""tic-tac-toe URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.0/topics/http/urls/
@@ -20,6 +20,6 @@ from .views import welcome
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$', welcome),
+    url(r'^$', welcome, name='tic-tac-toe_welcome'),
     url(r'^player/', include('player.urls')),
 ]
